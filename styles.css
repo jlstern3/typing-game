@@ -1,0 +1,73 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: blue;
+}
+
+body, .quote-input{
+    font-family:Georgia, 'Times New Roman', Times, serif;
+}
+
+.container{
+    background-color: yellow;
+    padding: 1rem;
+    border-radius: .5rem;
+    width: 700px;
+    /* makes it so that element never goes beyond 90% of parent element */
+    max-width: 90%;
+}
+
+.timer{
+    position: absolute;
+    top: 1rem;
+    font-size: 3rem;
+    color: yellow;
+    font-weight: bold;
+}
+
+.quote-display{
+    margin-bottom: 1rem;
+    /* lines up quote-display text with quote-input text
+    (based off left/right padding and border of quote-input) */
+    margin-left: calc(1rem + 2px);
+    margin-right: calc(1rem + 2px)
+}
+
+.quote-input{
+    background-color: transparent;
+    border: 2px solid blue;
+    outline: none;
+    /* stretched element out to 100% of parent element */
+    width: 100%;
+    height: 8rem;
+    /* makes element always stay centered */
+    margin: auto;
+    /* makes it so that you can't resize elemnet -- eliminates drag box */
+    resize: none;
+    padding: .5rem 1rem;
+    font-size: 1rem;
+    border-radius: .5rem;
+}
+
+/* makes it so that you can see where your cursor is focused
+(necessary because we did "outline: none;" above) */
+.quote-input:focus{
+    border-color: black;
+}
+
+.correct{
+    color: green;
+}
+
+.incorrect{
+    color: red;
+    text-decoration: underline;
+}
