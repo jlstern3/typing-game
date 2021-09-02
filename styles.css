@@ -9,7 +9,7 @@ body {
     justify-content: center;
     align-items: center;
     min-height: 100vh;
-    background-color: blue;
+    background-color: #358597;
 }
 
 body, .quote-input{
@@ -17,7 +17,7 @@ body, .quote-input{
 }
 
 .container{
-    background-color: yellow;
+    background-color: #fab4a5;
     padding: 1rem;
     border-radius: .5rem;
     width: 700px;
@@ -29,7 +29,7 @@ body, .quote-input{
     position: absolute;
     top: 7rem;
     font-size: 3rem;
-    color: yellow;
+    color: #fab4a5;
     font-weight: bold;
 }
 
@@ -43,7 +43,7 @@ body, .quote-input{
 
 .quote-input{
     background-color: transparent;
-    border: 2px solid blue;
+    border: 2px solid #358597;
     outline: none;
     /* stretched element out to 100% of parent element */
     width: 100%;
